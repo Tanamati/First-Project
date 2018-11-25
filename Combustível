@@ -1,0 +1,25 @@
+<html>
+	<h3>Alcool ou Gasolina?</h3>
+
+<script>
+	var Al = 2.67;
+	var Gas = 4.09;
+	var Total = 0;
+	function pulaLinha () {
+		document.write("<br>" + "<br>");
+	}
+
+	if (Al >= (Gas * 0.7)) {
+		document.write("Compensa abastecer com Gasolina!");
+		pulaLinha();
+		Total = (Gas / Al) * 100
+		document.write("O valor da Gasolina com relação ao Alcool é de ", Math.round(Total), "%");
+	} else {
+		document.write("Compensa abastecer com Alcool");
+		pulaLinha();
+		Total = (Al / Gas) * 100
+		document.write("O valor do Alcool com relação a Gasolina é de ", Math.round(Total), "%");
+	}
+
+</script>
+</html>
